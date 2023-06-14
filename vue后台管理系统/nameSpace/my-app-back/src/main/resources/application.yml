@@ -1,0 +1,13 @@
+server:
+  port: 8083
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #rewriteBatchedStatements=true 开启批处理模式
+    url: jdbc:mysql://192.168.1.3:3306/my-app-back?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true
+    username: root
+    password: root
+    name: defaultDataSource
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
